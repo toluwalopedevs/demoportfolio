@@ -81,7 +81,9 @@ h3{
     color: #FAFBFF;
     border: none;
     padding: 10px 30px;
+    margin-top: 30px;
 }
+
 .section2{
    margin-top: 70px;
    align-items: center;
@@ -89,13 +91,20 @@ h3{
    display: flex;
    flex-direction: column;
 }
-
+ul{
+    list-style: none;
+}
+li{
+    padding: 10px;
+}
 h2{
     font-weight: lighter;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 70px;
 }
-
+hr{
+   margin-top: 12px;
+}
 
 .container2{
     display: flex;
@@ -156,6 +165,11 @@ span{
 }
 .menubtn{
     display: none;}
+/* ul{
+    display: flex;
+} */
+
+
 @media screen and (max-width: 800px)
 {
     body{
@@ -167,13 +181,8 @@ span{
     .menubtn{
         display: block;
     }
-    p{
-        font-size: 1.5em;
-    }
-    .section1{
-        flex-shrink: 1;
-    }
-    .section2{
+    
+    .container1{
         flex-shrink: 2;
     }
     .container2{
