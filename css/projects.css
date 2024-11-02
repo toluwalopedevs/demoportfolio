@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:  #111111;
+    color:  #FAFBFF;
+    margin: 0 50px;
+    min-height: 100vh;
+}
+
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+nav a:hover{
+    background-color: #292929;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    background-color: 1111111e;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+.menubtn{
+    display: none;
+}
+h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 40px;
+    margin-top: 30px;
+}
+.firstsection{
+    display: flex;
+    margin-top: 40px;
+}
+.firstul{
+    display: flex;
+    list-style: none;
+    margin-left: 16px;
+}
+.firstli{
+    padding: 0 8px;
+}
+.firstbtn{
+    background-color: #181818;
+    color: #FAFBFF;
+    border-style: none;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 10px;
+}
+.tag{
+    margin-top: 10px;
+}
+.container2{
+    display: flex;
+    margin-top: 50px;
+}
+
+.box1{
+    flex-basis: 100px;
+   flex-grow: 1;
+}
+.box2{
+    /* flex-basis: 100px;
+    flex-grow: 1; */
+    justify-items: flex-end;
+    
+}
+
+.cardp{
+    font-size: 16px;
+    color: rgba(209, 199, 199, 0.87);
+    line-height: 28px;
+    padding-top: 1px;
+  
+}
+.cardp1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+
+}
+.cardh2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 42px;
+    margin-top: 60px;
+}
+span{ 
+    color: white
+}
+.cardbtn{
+    font-size: 10px;
+    border: 1px;
+    border-radius: 90px;
+    padding: 10px 35px;
+    background-color: #181818;
+    color: white; 
+}
+.btns{
+    margin-top: 40px;
+    
+}
+.cardbtn1{
+    background-color:  #181818;
+    color: #FAFBFF;
+    font-size: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+}
+
+
+
+@media screen and (max-width: 800px)
+{
+    body{
+        margin: 0 10px;
+    }
+    .hideOnMobile{
+     display: none;
+    }
+    .menubtn{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    body{
+        margin: 0 10px;
+    }
+    .sidebar{
+        width: 100%;
+    }}
